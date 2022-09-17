@@ -1,0 +1,52 @@
+button {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+button span {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    display: block;
+    background-color: black;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+button span::before,
+button span::after {
+    display: block;
+    content: '';
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: -6px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+button span::before {
+    top: 6px;
+}
+
+button.open span::before {
+    transform: rotate(45deg);
+    top: -1px;
+}
+
+button.open span::after {
+    transform: rotate(-45deg);
+    top: -1px;
+}
+
+button.open span {
+    background-color: transparent;
+}
+
+
