@@ -6,6 +6,7 @@
 
 body {
   background-color: yellow;
+  
 }
 @media screen and (min-width: 600px) {
   body {
@@ -14,6 +15,7 @@ body {
 }
 
 /*   LAYOUT    */
+
 
 .full-height {
   min-height: 100vh;
@@ -27,28 +29,112 @@ body {
 
 /*   ASTRONAUT    */
 .astronaut {
-    background-image: url('assets/photos/astronaut.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
+  background-image: url('assets/photos/astronaut.jpg');
+  background-size:cover;
+  background-position: 50% 44%;
 }
 
 .astronaut .heading-box {
-border: 4px solid black;
-width: 10rem;
-background-color: rgba(255, 255, 255, 0.7);
-position: absolute;
-top: 80px;
-left:40px;
-padding: 20px;
-font-family: 'Rubik', sans-serif;
+  border: 4px solid black;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.351);
+  position: absolute;
+  top: 80px;
+  left:40px;
+  padding: 20px;
+  font-family: 'Rubik', sans-serif;
 }
 .astronaut .heading-box .text {
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
+.astronaut .heading-box .link {
+  position: relative;
+  top: 10px;
+  font-size: small;
+}
+.astronaut .heading-box .link span {
+  font-size: large;
+}
+      
+
+/*HAMBURGER MENU*/
+
+.nav div {
+  height: 5px;
+  background: black;
+  margin: 5px 0;
+  border-radius: 24px;
+  transition: .2s;
+}
+.nav {
+  display: block;
+  margin: 2em 0 0 2em;
+  width: 50px;
+  position: fixed;
+  right: 3%;
+  z-index: 99;
+}
+.one {
+  width: 50px;
+}
+.two {
+  position: relative;
+  width: 50px;
+  right: 7px;
+}
+.three {
+  width: 50px;
+}
+.nav:hover .two{
+  right: 0px;
+}
+
+/*INSIDE MENU*/
+
+
+.mobile-nav {
+  
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 120px;
+  transition: 0.4s;
+
+}
+.mobile-nav.is-active {
+  left:0;
+}
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 1000;
+}
+.mobile-nav a:hover {
+  
+  background-color: rgb(255, 0, 221);
+ 
+
+
+}
+
 /*   DESKTOP    */
 
 @media screen and (min-width:  800px) {
@@ -63,13 +149,14 @@ font-family: 'Rubik', sans-serif;
   .astronaut .heading-box .link span {
     position: relative;
     left: 0px;
-    transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: left 0.2s cubic-bezier(0.7, 0, 0.35, 1);
 
   }
   
   .astronaut .heading-box .link:hover span {
       left: 10px;
   }
+  
  
 }
  /*   DARK MODE    */
