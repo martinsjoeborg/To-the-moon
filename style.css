@@ -116,7 +116,7 @@ body {
 .mobile-nav a {
   display: block;
   width: 100%;
-  max-width: 200px;
+  
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
@@ -129,7 +129,7 @@ body {
 }
 .mobile-nav a:hover {
   
-  background-color: rgb(255, 0, 221);
+  border-bottom: 3px solid pink;
  
 
 
