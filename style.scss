@@ -1,0 +1,323 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  background-color: yellow;  
+}
+@media screen and (min-width: 320px) {
+  body {
+   
+    /*   LAYOUT    */
+.full-height {
+  min-height: 100vh;
+}
+.astronaut {
+  background-color: coral;
+}
+.text-page {
+  background-color: seagreen;
+}
+/*   SIDA 1    */
+.astronaut {
+  background-image: url('assets/photos/astronaut.jpg');
+  background-size:cover;
+  background-position: 50% 44%; 
+  }
+.astronaut .heading-box {
+  border: 4px solid black;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.351);
+  position: absolute;
+  top: 80px;
+  left:40px;
+  padding: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+.astronaut .heading-box .text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.astronaut .heading-box .link {
+  position: relative;
+  top: 10px;
+  font-size: small;
+}
+.astronaut .heading-box .link span {
+  font-size: large;
+}
+
+    /*HAMBURGER MENU*/
+
+.nav div {
+  height: 5px;
+  background: black;
+  margin: 5px 0;
+  border-radius: 24px;
+  transition: .2s;
+}
+.nav {
+  display: block;
+  margin: 2em 0 0 2em;
+  width: 50px;
+  right: 3%;
+  z-index: 99;
+  position: absolute;
+}
+.one {
+  width: 50px;
+}
+.two {
+  position: relative;
+  width: 50px;
+  right: 7px;
+}
+.three {
+  width: 50px;
+}
+.nav:hover .two{
+  right: 0px;
+}
+
+/*INSIDE MENU*/
+
+.mobile-nav {
+  
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 98;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.4s;
+  justify-content: space-evenly;
+
+}
+.mobile-nav.is-active {
+  left:0;
+  
+}
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 1000;
+}
+}
+
+        /* SIDA 2 */
+
+.full-page {
+  min-height: 100vh;
+  background-image: url('assets/photos/bakgrund2.jpg');
+  background-size:cover;
+  background-position: 50% 44%;
+  font-family: 'Rubik', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0 40px;
+  /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund2.jpg');*/
+}
+.brown {
+  outline: none;
+  height: 50vh;
+}
+.gray {
+  outline: none;
+  height: 50vh;
+}
+.space-ventures {
+  h2 {
+      span:first-of-type {
+          display: block;
+          position: relative;
+          z-index: 1;
+          color: white;
+          top: 20px;
+          font-size: 5rem;
+          font-weight: bolder;
+          text-align: center;
+          left: -22%;
+          -webkit-text-stroke-width:.5px;
+          -webkit-text-stroke-color:black;
+      }
+      span:nth-of-type(2) {
+          display: block;
+          position: relative;
+          color: rgb(185, 176, 176);
+          z-index: 0;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 6.5rem;
+          text-align: center;
+          left: 35px;
+          top: -50px;
+      }
+  }
+}
+.purple h2{
+  outline: none ;
+  color: white;
+  font-size: 1.8rem;
+}
+.purple p {
+  outline: none;
+  color: white;
+  font-size: .8rem;
+  font-weight: normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+  
+}
+blockquote {
+  outline: none;
+  padding: 0;
+  margin: 20px;
+  position: relative;
+  display: inline;
+  color: white;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 2%;
+  
+  
+  &::before, &::after {
+      content: '"';
+      display: flex;
+      position: absolute;
+      font-size: 1.5rem;
+  }
+  &::before {
+      top: -3px;
+      left: 30px;
+  }
+  &::after {
+      bottom: -5px;
+      right: 284px;
+  }
+}
+/*.quote {
+  position: relative;
+  color: white;
+  text-align: left;
+  top: 30px;
+  font-size: 1.2rem;
+}*/
+
+.gradient-quote {
+  display: none;
+}
+
+.red {
+  outline: 3px solid red;
+}
+.blue {
+  outline: none;
+  color: white;
+  position: relative;
+  top: 25%;
+  font-size: .80rem;
+  font-weight:normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+}
+.gray p {
+  color: rgb(210, 0, 162);
+  top: 22%;
+  position: relative;
+  font-size: .80rem;
+  font-weight:normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.gray span {
+  color: rgb(210, 0, 162);
+  top: 15%;
+  left: 40%;
+  position: relative;
+  font-size: .80rem;
+  font-weight:normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+}
+.major-tom {
+  display: none;
+}
+/*   DESKTOP    */
+
+@media screen and (min-width:  1024px) {
+  .astronaut .heading-box {
+    width: 15rem;
+  }
+  .astronaut .heading-box .link {
+    text-align: right;
+    cursor: pointer;
+  }
+  .astronaut .heading-box .link span {
+    position: relative;
+    left: 0px;
+    transition: left 0.2s cubic-bezier(0.7, 0, 0.35, 1);
+  }
+  .astronaut .heading-box .link:hover span {
+      left: 10px;
+  }
+  .mobile-nav a:hover {
+  
+    border-bottom: 5px solid rgb(210, 0, 162);
+  }
+  .full-page {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin: 0 40px;
+
+  }
+  .brown {
+    grid-column: 1 / span 2;
+  }
+  .gray {
+    grid-column: 4 / span 2;
+  }
+  .gradient-quote {
+      display: block;
+      background: #FFE3E6;
+      background: radial-gradient(circle farthest-corner at center center, #FFE3E6 0%, #CF5374 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+  }
+  .major-tom {
+    display: block;
+    width: 100px;
+    height: auto;
+    float: right;
+    transform: rotate(3deg);
+  }
+}
+
+  
+
+}
