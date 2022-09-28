@@ -173,7 +173,7 @@ body {
   color: white;
   font-size: 1.8rem;
 }
-.purple p {
+.purple .nr1 {
   outline: none;
   color: white;
   font-size: .8rem;
@@ -181,7 +181,15 @@ body {
   letter-spacing: .6px;
   font-family: 'Rubik', sans-serif;
   line-height: 20px;
-  
+}
+.purple .nr2 {
+  outline: none;
+  color: white;
+  font-size: .8rem;
+  font-weight: normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
 }
 blockquote {
   outline: none;
@@ -229,7 +237,7 @@ blockquote {
   outline: 3px solid red;
 }
 .blue {
-  outline: none;
+  outline: 3px solid blue;
   color: white;
   position: relative;
   top: 25%;
@@ -286,28 +294,124 @@ blockquote {
   
     border-bottom: 5px solid rgb(210, 0, 162);
   }
+  /*PAGE 2*/
+
   .full-page {
       display: grid;
+      position: relative;
       grid-template-columns: repeat(5, 1fr);
       gap: 20px;
-      margin: 0 40px;
-
+      padding: 0 80px;
+      background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund2.jpg');
+      z-index: 0;
+      
+  }
+  .space-ventures {
+    h2 {
+        span:first-of-type {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: white;
+            top: 30px;
+            font-size: 9rem;
+            font-weight: bolder;
+            text-align: left;
+            left: 0;
+            -webkit-text-stroke-width:.5px;
+            -webkit-text-stroke-color:black;
+        }
+        span:nth-of-type(2) {
+            display: block;
+            position: relative;
+            color: rgba(185, 176, 176, 0.887);
+            z-index: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11rem;
+            text-align: left;
+            left: 3%;
+            top: -65px;
+        }
+    }
   }
   .brown {
     grid-column: 1 / span 2;
+    outline: 3px solid brown;
+    height: 100vh;
   }
   .gray {
     grid-column: 4 / span 2;
+    outline: 3px solid gray;
+    height: 100vh;
   }
+  .purple h2 {
+    outline: 3px solid purple;
+    font-size: 2.5rem
+
+  }
+  .purple .nr1 {
+    outline: 3px solid purple;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 27px;
+  }
+  .purple .nr2 {
+    outline: 3px solid purple;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 27px;
+  }
+  blockquote {
+    outline: none;
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    display: inline;
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 2%;
+    left: 5%;
+    
+    
+    &::before, &::after {
+        content: '"';
+        display: flex;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+    &::before {
+        top: -3px;
+        left: 30px;
+    }
+    &::after {
+        bottom: -5px;
+        right: 284px;
+    }
+  }
+
   .gradient-quote {
       display: block;
       background: #FFE3E6;
-      background: radial-gradient(circle farthest-corner at center center, #FFE3E6 0%, #CF5374 100%);
+      background: radial-gradient(circle farthest-corner at center center, #ffe3e648 0%, #cf537442 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: bold;
+      font-weight: lighter;
       font-size: 3rem;
-      text-align: center;
+      text-align: left;
+      position: relative;
+      top: 15%;
+      width:450px;
+      left: -20px;
   }
   .major-tom {
     display: block;
@@ -317,7 +421,68 @@ blockquote {
     transform: rotate(3deg);
   }
 }
+.blue {
+color: white;
+font-size: 1.2rem;
+font-weight: normal;
+letter-spacing: .6px;
+font-family: 'Rubik', sans-serif;
+line-height: 27px;
+}
 
-  
+.gray {
+  p {
+  color: rgb(210, 0, 162);
+  top: 26%;
+  position: relative;
+  font-size: .80rem;
+  font-weight:normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+ span {
+  color: rgb(210, 0, 162);
+  top: 22.5%;
+  left: 27%;
+  position: relative;
+  font-size: .80rem;
+  font-weight:normal;
+  letter-spacing: .6px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+}
+
+
+/*FOOTER*/
+
+
+.cookiePopUp .cookieText .cookie-button .buttonText {
+  display: inline-block;
+  padding: 0 20px;
+}
+.cookiePopUp .cookieText {
+  color: #D200A2;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  font-size: 0.75rem;
+}
+.buttonText {
+  color: white;
+  font-weight: bold;
+}
+.cookiePopUp .cookie-button {
+  background-color: #003568;
+  border: 0;
+  padding: 7px 13px;
+  cursor: pointer;
+}
+.cookiePopUp.disable {
+  display: none;
+}
 
 }
