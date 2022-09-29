@@ -245,7 +245,7 @@ blockquote {
   outline: 3px solid red;
 }
 .blue {
-  outline: 3px solid blue;
+  outline: none;
   color: white;
   position: relative;
   top: 25%;
@@ -280,7 +280,10 @@ blockquote {
 .major-tom {
   display: none;
 }
+
+
 /*   DESKTOP    */
+
 
 @media screen and (min-width:  1024px) {
   .astronaut .heading-box {
@@ -329,7 +332,7 @@ blockquote {
       gap: 20px;
       padding: 0 80px;
       background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund2.jpg');
-      z-index: 0;
+      
       min-height: 100vh;
       
   }
@@ -341,7 +344,7 @@ blockquote {
             z-index: 1;
             color: white;
             top: 30px;
-            font-size: 9rem;
+            font-size: 7rem;
             font-weight: bolder;
             text-align: left;
             left: 0;
@@ -354,41 +357,41 @@ blockquote {
             color: rgba(185, 176, 176, 0.887);
             z-index: 0;
             font-family: 'Times New Roman', Times, serif;
-            font-size: 11rem;
+            font-size: 9rem;
             text-align: left;
-            left: 3%;
-            top: -65px;
+            left: 0;
+            top: -45px;
         }
     }
   }
   .brown {
     grid-column: 1 / span 2;
-    outline: 3px solid brown;
+    outline: 3px solid rgb(115, 85, 14);
     min-height: 100vh;
   }
   .gray {
     grid-column: 4 / span 2;
-    outline: 3px solid gray;
+    outline: none;
     min-height: 100vh;
   }
   .purple h2 {
-    outline: 3px solid purple;
-    font-size: 2.5rem
+    outline: none;
+    font-size: 2rem
 
   }
   .purple .nr1 {
-    outline: 3px solid purple;
+    outline: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
     letter-spacing: .6px;
     font-family: 'Rubik', sans-serif;
     line-height: 27px;
   }
   .purple .nr2 {
-    outline: 3px solid purple;
+    outline: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
     letter-spacing: .6px;
     font-family: 'Rubik', sans-serif;
@@ -401,7 +404,7 @@ blockquote {
     position: relative;
     display: inline;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -450,7 +453,7 @@ blockquote {
 }
 .blue {
 color: white;
-font-size: 1.2rem;
+font-size: 1rem;
 font-weight: normal;
 letter-spacing: .6px;
 font-family: 'Rubik', sans-serif;
@@ -469,6 +472,8 @@ line-height: 27px;
   line-height: 20px;
   text-decoration: underline;
   cursor: pointer;
+  display: block;
+  width: 30%;
 }
  span {
   color: rgb(210, 0, 162);
@@ -515,7 +520,7 @@ line-height: 27px;
 .cookiePopUp .cookie-button {
   display: block;
   position: relative;
-  left: 39%;
+  
   background-color: #003568;
   border: 0;
   padding: 0 15px;
