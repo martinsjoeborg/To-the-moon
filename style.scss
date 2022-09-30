@@ -3,299 +3,687 @@
   clear: both;
   display: table;
 }
+
 body {
-  background-color: yellow; 
+  background-color: yellow;
 
-    max-width: 100%;
-    
-    overflow-x: hidden;
-    
-    
+  max-width: 100%;
+
+  overflow-x: hidden;
+
+
 }
+
+/*-----------------------*/
+/*------MOBILE VIEW------*/
+/*-----------------------*/
 @media screen and (min-width: 320px) {
-  body {
-   
-    /*   LAYOUT    */
-.full-height {
-  min-height: 100vh;
-}
-.astronaut {
-  background-color: coral;
-}
-.text-page {
-  background-color: seagreen;
-}
-/*   SIDA 1    */
-.astronaut {
-  background-image: url('assets/photos/astronaut.jpg');
-  background-size:cover;
-  background-position: 50% 44%; 
+
+
+  /*------------------*/
+  /*------LAYOUT------*/
+  /*------------------*/
+  .full-height {
+    min-height: 100vh;
   }
-.astronaut .heading-box {
-  border: 4px solid black;
-  width: 27rem;
-  background-color: rgba(255, 255, 255, 0.351);
-  position: absolute;
-  top: 80px;
-  left:80px;
-  padding: 70px 0;
-  font-family: 'Rubik', sans-serif;
-}
-.astronaut .heading-box .text {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: bolder;
-  margin-bottom: 10px;
-}
-.astronaut .heading-box .link {
-  position: relative;
-  top: 50px;
-  right: 25px;
-  font-size: bold;
-  font-family: 'Rubik', sans-serif;
-}
-.astronaut .heading-box .link span {
-  font-size: large;
-}
 
-    /*HAMBURGER MENU*/
+  .astronaut {
+    background-color: coral;
+  }
 
-.nav div {
-  height: 10px;
-  background: black;
-  margin: 5px 0;
-  border-radius: 24px;
-  transition: .2s;
-}
-.nav {
-  display: block;
-  margin: 2em 0 0 2em;
-  width: 50px;
-  right: 3%;
-  z-index: 99;
-  position: absolute;
-}
-.one {
-  width: 70px;
-}
-.two {
-  position: relative;
-  width: 70px;
-  right: 10px;
-}
-.three {
-  width: 70px;
-}
-.nav:hover .two{
-  right: 0px;
-}
+  .text-page {
+    background-color: seagreen;
+  }
 
-/*INSIDE MENU*/
+  /*------------------*/
+  /*------SIDA 1------*/
+  /*------------------*/
+  .astronaut {
+    background-image: url('assets/photos/astronaut.jpg');
+    background-size: cover;
+    background-position: 50% 44%;
+  }
 
-.mobile-nav {
-  
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 98;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: 0.4s;
-  justify-content: space-evenly;
+  .astronaut .heading-box {
+    border: 3px solid black;
+    width: 6rem;
+    background-color: rgba(255, 255, 255, 0.351);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 20px 30px;
+    font-family: 'Rubik', sans-serif;
+  }
 
-}
-.mobile-nav.is-active {
-  left:0;
-  
-}
-.mobile-nav a {
-  display: block;
-  width: 100%;
-  margin: 0 auto 16px;
-  text-align: center;
-  padding: 12px 16px;
-  background-color: transparent;
-  color: black;
-  text-decoration: none;
-  font-size: 3rem;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 1000;
-}
-}
+  .astronaut .heading-box .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
 
-        /* SIDA 2 */
+  .astronaut .heading-box .link {
+    position: relative;
+    top: 12px;
+    right: 20px;
+    font-size: 11px;
+    font-family: 'Rubik', sans-serif;
+  }
 
-.full-page {
-  min-height: 100vh;
-  background-image: url('assets/photos/bakgrund2.jpg');
-  background-size:cover;
-  background-position: 50% 44%;
-  font-family: 'Rubik', sans-serif;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0 40px;
-  /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund2.jpg');*/
-}
-.brown {
-  outline: none;
-  height: 50vh;
-}
-.gray {
-  outline: none;
-  height: 50vh;
-}
-.space-ventures {
-  h2 {
+  .astronaut .heading-box .link span {
+    font-size: 13px;
+    position: relative;
+    top: 1.3px;
+    left: 2px;
+  }
+
+  /*--------------------------*/
+  /*------HAMBURGER MENU------*/
+  /*--------------------------*/
+
+  .nav div {
+    height: 6px;
+    background: black;
+    margin: 8px 0;
+    border-radius: 24px;
+    transition: .2s;
+  }
+
+  .nav {
+    display: block;
+    margin: 2em 0 0 2em;
+    width: 50px;
+    right: 3%;
+    z-index: 99;
+    position: absolute;
+  }
+
+  .one {
+    width: 40px;
+  }
+
+  .two {
+    position: relative;
+    width: 40px;
+    right: 10px;
+  }
+
+  .three {
+    width: 40px;
+  }
+
+  .nav:hover .two {
+    right: 0px;
+  }
+
+  /*-----------------------*/
+  /*------INSIDE MENU------*/
+  /*-----------------------*/
+
+  .mobile-nav {
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.4s;
+    justify-content: space-evenly;
+
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 1000;
+    filter: drop-shadow(0 4px 1px rgb(108, 108, 108));
+  }
+
+
+  /*------------------*/
+  /*------SIDA 2------*/
+  /*------------------*/
+
+  .full-page {
+    min-height: 100vh;
+    background-image: url('assets/photos/bakgrund3.jpg');
+    background-size: cover;
+    background-position: 50% 44%;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 40px;
+    /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund3.jpg');*/
+  }
+
+  .section1 {
+    outline: none;
+    height: 50vh;
+  }
+
+  .section2 {
+    outline: none;
+    height: 50vh;
+  }
+
+  .space-ventures {
+    h2 {
       span:first-of-type {
-          display: block;
-          position: relative;
-          z-index: 1;
-          color: white;
-          top: 20px;
-          font-size: 5rem;
-          font-weight: bolder;
-          text-align: center;
-          left: -22%;
-          -webkit-text-stroke-width:.5px;
-          -webkit-text-stroke-color:black;
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: white;
+        top: 20px;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        left: -22%;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
       }
+
       span:nth-of-type(2) {
-          display: block;
-          position: relative;
-          color: rgb(185, 176, 176);
-          z-index: 0;
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 6.5rem;
-          text-align: center;
-          left: 35px;
-          top: -50px;
+        display: block;
+        position: relative;
+        color: rgb(185, 176, 176);
+        z-index: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 4rem;
+        text-align: center;
+        left: 20px;
+        top: -20px;
       }
+    }
   }
-}
-.purple h2{
-  outline: none ;
-  color: white;
-  font-size: 1.8rem;
-}
-.purple .nr1 {
-  outline: none;
-  color: white;
-  font-size: .8rem;
-  font-weight: normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-}
-.purple .nr2 {
-  outline: none;
-  color: white;
-  font-size: .8rem;
-  font-weight: normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-}
-blockquote {
-  outline: none;
-  padding: 0;
-  margin: 20px;
-  position: relative;
-  display: inline;
-  color: white;
-  font-size: 1.2rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  top: 2%;
-  
-  
-  &::before, &::after {
+
+  .paragraph1 h2 {
+    position: relative;
+    top: -25px;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .paragraph1 .nr1 {
+    position: relative;
+    top: -25px;
+    outline: none;
+    color: white;
+    font-size: .75rem;
+    font-weight: normal;
+    letter-spacing: .4px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .paragraph1 .nr2 {
+    position: relative;
+    top: -25px;
+    outline: none;
+    color: white;
+    font-size: .75rem;
+    font-weight: normal;
+    letter-spacing: .4px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  blockquote {
+    outline: none;
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    display: inline;
+    color: white;
+    font-size: .9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -50px;
+
+
+    &::before,
+    &::after {
       content: '"';
       display: flex;
       position: absolute;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    &::before {
+      position: relative;
+      top: 18px;
+      left: -130px;
+    }
+
+    &::after {
+      position: relative;
+      bottom: 18px;
+      right: 63px;
+    }
   }
-  &::before {
-      top: -3px;
-      left: 30px;
-  }
-  &::after {
-      bottom: -5px;
-      right: 284px;
-  }
-}
-/*.quote {
+
+  /*.quote {
   position: relative;
   color: white;
   text-align: left;
   top: 30px;
   font-size: 1.2rem;
-}*/
+  }*/
 
-.gradient-quote {
-  display: none;
+  .gradient-quote {
+    display: none;
+  }
+
+  .paragraph2 {
+    outline: none;
+    color: white;
+    position: relative;
+    top: 3px;
+    font-size: .75rem;
+    font-weight: normal;
+    letter-spacing: .4px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .section2 p {
+    color: rgb(210, 0, 162);
+    top: 3%;
+    position: relative;
+    font-size: .8rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+    text-decoration: underline;
+  }
+
+  .section2 span {
+    color: rgb(210, 0, 162);
+    top: -18px;
+    left: 180px;
+    position: relative;
+    font-size: .90rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .major-tom {
+    display: none;
+  }
+
+  .cookiePopUp {
+    display: none;
+    visibility: hidden;
+  }
+
 }
 
-.red {
-  outline: 3px solid red;
-}
-.blue {
-  outline: none;
+/*------------------*/
+/*------TABLET------*/
+/*------------------*/
+
+@media screen and (min-width: 522px) {
+
+  /*------------------*/
+  /*------LAYOUT------*/
+  /*------------------*/
+  .full-height {
+    min-height: 100vh;
+  }
+
+  .astronaut {
+    background-color: coral;
+  }
+
+  .text-page {
+    background-color: seagreen;
+  }
+
+  /*------------------*/
+  /*------SIDA 1------*/
+  /*------------------*/
+  .astronaut {
+    background-image: url('assets/photos/astronaut.jpg');
+    background-size: cover;
+    background-position: 50% 44%;
+  }
+
+  .astronaut .heading-box {
+    border: 5px solid black;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.351);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 20px 30px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .astronaut .heading-box .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+
+  .astronaut .heading-box .link {
+    position: relative;
+    top: 12px;
+    right: 20px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .astronaut .heading-box .link span {
+    font-size: large;
+  }
+
+  /*--------------------------*/
+  /*------HAMBURGER MENU------*/
+  /*--------------------------*/
+
+  .nav div {
+    height: 8px;
+    background: black;
+    margin: 8px 0;
+    border-radius: 24px;
+    transition: .2s;
+  }
+
+  .nav {
+    display: block;
+    margin: 2em 0 0 2em;
+    width: 50px;
+    right: 3%;
+    z-index: 99;
+    position: absolute;
+  }
+
+  .one {
+    width: 55px;
+  }
+
+  .two {
+    position: relative;
+    width: 55px;
+    right: 10px;
+  }
+
+  .three {
+    width: 55px;
+  }
+
+  .nav:hover .two {
+    right: 0px;
+  }
+
+  /*-----------------------*/
+  /*------INSIDE MENU------*/
+  /*-----------------------*/
+
+  .mobile-nav {
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.4s;
+    justify-content: space-evenly;
+
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 1000;
+  }
+
+
+  /*------------------*/
+  /*------SIDA 2------*/
+  /*------------------*/
+
+  .full-page {
+    min-height: 100vh;
+    background-image: url('assets/photos/bakgrund3.jpg');
+    background-size: cover;
+    background-position: 50% 44%;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 40px;
+    /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund3.jpg');*/
+  }
+
+  .section1 {
+    outline: none;
+    height: 50vh;
+  }
+
+  .section2 {
+    outline: none;
+    height: 50vh;
+  }
+
+  .space-ventures {
+    h2 {
+      span:first-of-type {
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: white;
+        top: 20px;
+        font-size: 5rem;
+        font-weight: bolder;
+        text-align: center;
+        left: -22%;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+      }
+
+      span:nth-of-type(2) {
+        display: block;
+        position: relative;
+        color: rgb(185, 176, 176);
+        z-index: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 6.5rem;
+        text-align: center;
+        left: 45px;
+        top: -50px;
+      }
+    }
+  }
+
+  .paragraph1 h2 {
+    position: relative;
+    top: -45px;
+    outline: none;
+    color: white;
+    font-size: 1.8rem;
+  }
+
+  .paragraph1 .nr1 {
+    position: relative;
+    top: -50px;
+    outline: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .paragraph1 .nr2 {
+    position: relative;
+    top: -50px;
+    outline: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  blockquote {
+    outline: none;
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    display: inline;
+    color: white;
+    font-size: 1.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -80px;
+
+
+    &::before,
+    &::after {
+      content: '"';
+      display: flex;
+      position: absolute;
+      font-size: 1.5rem;
+    }
+
+    &::before {
+      position: relative;
+      top: 23px;
+      left: -182px;
+    }
+
+    &::after {
+      position: relative;
+      bottom: 24px;
+      right: 95px;
+    }
+  }
+
+  /*.quote {
+  position: relative;
   color: white;
-  position: relative;
-  top: 25%;
-  font-size: .80rem;
-  font-weight:normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-}
-.gray p {
-  color: rgb(210, 0, 162);
-  top: 22%;
-  position: relative;
-  font-size: .80rem;
-  font-weight:normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-  text-decoration: underline;
-}
-.gray span {
-  color: rgb(210, 0, 162);
-  top: 15%;
-  left: 40%;
-  position: relative;
-  font-size: .80rem;
-  font-weight:normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-}
-.major-tom {
-  display: none;
+  text-align: left;
+  top: 30px;
+  font-size: 1.2rem;
+  }*/
+
+  .gradient-quote {
+    display: none;
+  }
+
+  .paragraph2 {
+    outline: none;
+    color: white;
+    position: relative;
+    top: 80px;
+    font-size: .9rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .section2 p {
+    color: rgb(210, 0, 162);
+    top: 23%;
+    position: relative;
+    font-size: .9rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+    text-decoration: underline;
+  }
+
+  .section2 span {
+    color: rgb(210, 0, 162);
+    top: 75px;
+    left: 205px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+  }
+
+  .major-tom {
+    display: none;
+  }
+
+  .cookiePopUp {
+    display: none;
+    visibility: hidden;
+  }
+
 }
 
+/*------------------*/
+/*------LAPTOP------*/
+/*------------------*/
 
-/*   DESKTOP    */
+@media screen and (min-width: 769px) {}
+
+/*------------------*/
+/*------DESKTOP-----*/
+/*------------------*/
 
 
-@media screen and (min-width:  1024px) {
+@media screen and (min-width: 1024px) {
   .astronaut .heading-box {
     border: 4px solid black;
     width: 27rem;
     background-color: rgba(255, 255, 255, 0.351);
     position: absolute;
     top: 80px;
-    left:80px;
+    left: 80px;
     padding: 70px 0;
     font-family: 'Rubik', sans-serif;
   }
+
   .astronaut .heading-box .text {
 
     text-align: center;
@@ -304,6 +692,7 @@ blockquote {
     font-weight: bolder;
     margin-bottom: 10px;
   }
+
   .astronaut .heading-box .link {
     text-align: right;
     cursor: pointer;
@@ -311,92 +700,122 @@ blockquote {
     top: 50px;
     right: 25px;
   }
+
   .astronaut .heading-box .link span {
     position: relative;
     left: 0px;
     transition: left 0.2s cubic-bezier(0.7, 0, 0.35, 1);
   }
+
   .astronaut .heading-box .link:hover span {
-      left: 10px;
+    left: 10px;
   }
+
+  .mobile-nav a {
+    display: block;
+    width: 290px;
+    margin: 0 auto 0px;
+    text-align: center;
+    padding: 0 0;
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    filter: drop-shadow(0 4px 1px rgb(108, 108, 108));
+  }
+
   .mobile-nav a:hover {
-  
+
     border-bottom: 5px solid rgb(210, 0, 162);
   }
-  /*PAGE 2*/
+
+  /*------------------*/
+  /*------PAGE 2------*/
+  /*------------------*/
 
   .full-page {
-      display: grid;
-      position: relative;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-      padding: 0 80px;
-      background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund2.jpg');
-      
-      min-height: 100vh;
-      
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund2.jpg');
+
+    min-height: 100vh;
+
   }
+
   .space-ventures {
     h2 {
-        span:first-of-type {
-            display: block;
-            position: relative;
-            z-index: 1;
-            color: white;
-            top: 30px;
-            font-size: 7rem;
-            font-weight: bolder;
-            text-align: left;
-            left: 0;
-            -webkit-text-stroke-width:.5px;
-            -webkit-text-stroke-color:black;
-        }
-        span:nth-of-type(2) {
-            display: block;
-            position: relative;
-            color: rgba(185, 176, 176, 0.887);
-            z-index: 0;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 9rem;
-            text-align: left;
-            left: 0;
-            top: -45px;
-        }
+      span:first-of-type {
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: white;
+        top: 30px;
+        font-size: 6rem;
+        font-weight: bolder;
+        text-align: left;
+        left: 0;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+      }
+
+      span:nth-of-type(2) {
+        display: block;
+        position: relative;
+        color: rgba(185, 176, 176, 0.607);
+        z-index: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 7rem;
+        text-align: left;
+        left: 5%;
+        top: -35px;
+      }
     }
   }
-  .brown {
+
+  .section1 {
     grid-column: 1 / span 2;
-    outline: 3px solid rgb(115, 85, 14);
+    outline: none;
     min-height: 100vh;
   }
-  .gray {
+
+  .section2 {
     grid-column: 4 / span 2;
     outline: none;
     min-height: 100vh;
   }
-  .purple h2 {
+
+  .paragraph1 h2 {
     outline: none;
-    font-size: 2rem
+    font-size: 2rem;
+    top: 18px;
 
   }
-  .purple .nr1 {
+
+  .paragraph1 .nr1 {
     outline: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     letter-spacing: .6px;
     font-family: 'Rubik', sans-serif;
     line-height: 27px;
+    top: 18px;
   }
-  .purple .nr2 {
+
+  .paragraph1 .nr2 {
     outline: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     letter-spacing: .6px;
     font-family: 'Rubik', sans-serif;
     line-height: 27px;
+    top: 20px;
   }
+
   blockquote {
     outline: none;
     padding: 0;
@@ -409,40 +828,46 @@ blockquote {
     justify-content: center;
     align-items: center;
     display: flex;
-    top: 2%;
+    top: 18px;
     left: 5%;
-    
-    
-    &::before, &::after {
-        content: '"';
-        display: flex;
-        position: absolute;
-        font-size: 1.5rem;
-    }
-    &::before {
-        top: -3px;
-        left: 30px;
-    }
+
+
+    &::before,
     &::after {
-        bottom: -5px;
-        right: 284px;
+      content: '"';
+      display: flex;
+      position: absolute;
+      font-size: 1.5rem;
+    }
+
+    &::before {
+      position: relative;
+      top: 25px;
+      left: -225px;
+    }
+
+    &::after {
+      position: relative;
+      bottom: 28px;
+      right: 115px;
     }
   }
 
   .gradient-quote {
-      display: block;
-      background: #FFE3E6;
-      background: radial-gradient(circle farthest-corner at center center, #ffe3e648 0%, #cf537442 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: lighter;
-      font-size: 3rem;
-      text-align: left;
-      position: relative;
-      top: 15%;
-      width:450px;
-      left: -20px;
+    display: block;
+    background: #FFE3E6;
+    background: radial-gradient(circle farthest-corner at center center, #ffe3e648 0%, #cf537442 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: left;
+    position: relative;
+    top: 11%;
+    width: 450px;
+    left: -20px;
   }
+
   .major-tom {
     display: block;
     width: 100px;
@@ -450,34 +875,39 @@ blockquote {
     float: right;
     transform: rotate(3deg);
   }
-}
-.blue {
-color: white;
-font-size: 1rem;
-font-weight: normal;
-letter-spacing: .6px;
-font-family: 'Rubik', sans-serif;
-line-height: 27px;
-}
 
-.gray {
-  p {
+  .paragraph2 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 27px;
+    position: relative;
+    top: 150px;
+  }
+
+  .section2 {
+    p {
+      color: rgb(210, 0, 162);
+      top: 145px;
+      position: relative;
+      font-size: .80rem;
+      font-weight: normal;
+      letter-spacing: .6px;
+      font-family: 'Rubik', sans-serif;
+      line-height: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+      display: block;
+      width: 50%;
+    }
+
+    span {
+      display: none;
+      /*
   color: rgb(210, 0, 162);
-  top: 26%;
-  position: relative;
-  font-size: .80rem;
-  font-weight:normal;
-  letter-spacing: .6px;
-  font-family: 'Rubik', sans-serif;
-  line-height: 20px;
-  text-decoration: underline;
-  cursor: pointer;
-  display: block;
-  width: 30%;
-}
- span {
-  color: rgb(210, 0, 162);
-  top: 22.5%;
+  top: 152px;
   left: 27%;
   position: relative;
   font-size: .80rem;
@@ -485,50 +915,71 @@ line-height: 27px;
   letter-spacing: .6px;
   font-family: 'Rubik', sans-serif;
   line-height: 20px;
-  cursor: pointer;
-}
+  cursor: pointer;*/
+    }
 
-}
+  }
 
+  /*------------------*/
+  /*------FOOTER------*/
+  /*------------------*/
 
-/*FOOTER*/
+  .cookiePopUp {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #0d0230f8;
+    display: flex;
+    visibility: visible;
+    padding: 0 15px;
+  }
 
-.cookiePopUp {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background-color: #110439f8;
-  display: flex;
-}
-.cookiePopUp .cookieText .cookie-button .buttonText {
-  display: block;
-  padding: 10px;
-}
-.cookiePopUp .cookieText {
-  position: relative;
-  left: 35px;
-  color: #D200A2;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  font-size: 1.2rem;
-  padding: 10px;
-}
-.buttonText {
-  color: white;
-  font-weight: bold;
-  font-family: 'Rubik', sans-serif;
-}
-.cookiePopUp .cookie-button {
-  display: block;
-  position: relative;
-  
-  background-color: #003568;
-  border: 0;
-  padding: 0 15px;
-  cursor: pointer;
-  height: 48px;
-}
-.cookiePopUp.disable {
-  display: none;
-}
+  .cookiePopUp .cookieText .cookie-button .buttonText {
+    display: block;
+    padding: 10px;
+  }
+
+  .cookiePopUp .cookieText {
+    position: relative;
+    left: 35px;
+    color: #D200A2;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  /*.buttonText {
+    color: white;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+  }*/
+  .cookie-button {
+    display: block;
+    position: relative;
+    color: white;
+    background-color: #030671;
+    border: 0;
+    padding: 0 15px;
+    margin: 0 -20px;
+    cursor: pointer;
+    height: 48px;
+    font-family: 'Rubik', sans-serif;
+    top: 15px;
+    right: -52%;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  .cookie-button.is-active {
+    top: 0;
+  }
+
+  .cookie-button:hover {
+    background-color: #030896;
+  }
+
+  /*.cookiePopUp.disable {
+    display: none;
+  }*/
 
 }
