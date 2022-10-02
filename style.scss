@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: yellow;
+  background-color: black;
 
   max-width: 100%;
 
@@ -665,7 +665,10 @@ body {
 /*------LAPTOP------*/
 /*------------------*/
 
-@media screen and (min-width: 769px) {}
+@media screen and (min-width: 769px) {
+  
+
+}
 
 /*------------------*/
 /*------DESKTOP-----*/
@@ -734,13 +737,14 @@ body {
   /*------------------*/
 
   .full-page {
+    
     display: grid;
     position: relative;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 0 80px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund2.jpg');
-
+    min-width: 100%;
     min-height: 100vh;
 
   }
@@ -941,10 +945,10 @@ body {
 
   .cookiePopUp .cookieText {
     position: relative;
-    left: 35px;
+    left: 25px;
     color: #D200A2;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px;
   }
 
@@ -964,8 +968,9 @@ body {
     cursor: pointer;
     height: 48px;
     font-family: 'Rubik', sans-serif;
-    top: 15px;
-    right: -52%;
+    top: 10px;
+    left: 10%;
+    right: 22%;
     font-weight: bold;
     transition: 0.4s;
   }
