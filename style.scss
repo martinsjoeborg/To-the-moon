@@ -163,7 +163,7 @@ body {
 
   .full-page {
     min-height: 100vh;
-    background-image: url('assets/photos/bakgrund3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/photos/bakgrund3.jpg');
     background-size: cover;
     background-position: 50% 44%;
     font-family: 'Rubik', sans-serif;
@@ -210,7 +210,7 @@ body {
         left: 20px;
         top: -20px;
       }
-    }
+    }  
   }
 
   .paragraph1 h2 {
@@ -485,14 +485,13 @@ body {
 
   .full-page {
     min-height: 100vh;
-    background-image: url('assets/photos/bakgrund3.jpg');
     background-size: cover;
     background-position: 50% 44%;
     font-family: 'Rubik', sans-serif;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 0 40px;
-    /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund3.jpg');*/
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('assets/photos/bakgrund3.jpg');
   }
 
   .section1 {
@@ -717,7 +716,7 @@ body {
     margin: 0 auto 0px;
     text-align: center;
     padding: 0 0;
-    background-color: none;
+    background-color: transparent;
     color: black;
     text-decoration: none;
     font-size: 3rem;
@@ -932,6 +931,7 @@ body {
     display: flex;
     visibility: visible;
     padding: 0 15px;
+    z-index: 2;
   }
 
   .cookiePopUp .cookieText .cookie-button .buttonText {
