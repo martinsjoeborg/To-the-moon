@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: yellow;
+  background-color: black;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -134,7 +134,7 @@ body {
   /*------------------*/
   .full-page {
     min-height: 100vh;
-    background-image: url("assets/photos/bakgrund3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/photos/bakgrund3.jpg");
     background-size: cover;
     background-position: 50% 44%;
     font-family: "Rubik", sans-serif;
@@ -405,14 +405,13 @@ body {
   /*------------------*/
   .full-page {
     min-height: 100vh;
-    background-image: url("assets/photos/bakgrund3.jpg");
     background-size: cover;
     background-position: 50% 44%;
     font-family: "Rubik", sans-serif;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 0 40px;
-    /*background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('assets/photos/bakgrund3.jpg');*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/bakgrund3.jpg");
   }
   .section1 {
     outline: none;
@@ -558,10 +557,277 @@ body {
 /*------------------*/
 /*------LAPTOP------*/
 /*------------------*/
+@media screen and (min-width: 1000px) {
+  .astronaut .heading-box {
+    border: 4px solid black;
+    width: 24rem;
+    background-color: rgba(255, 255, 255, 0.351);
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    padding: 60px 0;
+    font-family: "Rubik", sans-serif;
+  }
+  .astronaut .heading-box .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .astronaut .heading-box .link {
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    right: 25px;
+  }
+  .astronaut .heading-box .link span {
+    position: relative;
+    left: 0px;
+    transition: left 0.2s cubic-bezier(0.7, 0, 0.35, 1);
+  }
+  .astronaut .heading-box .link:hover span {
+    left: 10px;
+  }
+  .mobile-nav a {
+    display: block;
+    width: 290px;
+    margin: 0 auto 0px;
+    text-align: center;
+    padding: 0 0;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    filter: drop-shadow(0 4px 1px rgb(108, 108, 108));
+  }
+  .mobile-nav a:hover {
+    border-bottom: 5px solid rgb(210, 0, 162);
+  }
+  /*------------------*/
+  /*------PAGE 2------*/
+  /*------------------*/
+  .full-page {
+    display: grid;
+    position: static;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/photos/bakgrund2.jpg");
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  .space-ventures h2 span:first-of-type {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: 30px;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: left;
+    left: 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+  .space-ventures h2 span:nth-of-type(2) {
+    display: block;
+    position: relative;
+    color: rgba(185, 176, 176, 0.607);
+    z-index: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5rem;
+    text-align: left;
+    left: 5%;
+    top: -18px;
+  }
+  .section1 {
+    grid-column: 1/span 2;
+    outline: none;
+    min-height: 100vh;
+  }
+  .section2 {
+    grid-column: 4/span 2;
+    outline: none;
+    min-height: 100vh;
+  }
+  .paragraph1 h2 {
+    outline: none;
+    font-size: 1.8rem;
+    top: -20px;
+  }
+  .paragraph1 .nr1 {
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    font-family: "Rubik", sans-serif;
+    line-height: 27px;
+    top: -20px;
+  }
+  .paragraph1 .nr2 {
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    font-family: "Rubik", sans-serif;
+    line-height: 27px;
+    top: -20px;
+  }
+  blockquote {
+    outline: none;
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    display: inline;
+    color: white;
+    font-size: 1.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -40px;
+    left: 5%;
+  }
+  blockquote::before, blockquote::after {
+    content: '"';
+    display: flex;
+    position: absolute;
+    font-size: 1.5rem;
+  }
+  blockquote::before {
+    position: relative;
+    top: 25px;
+    left: -200px;
+  }
+  blockquote::after {
+    position: relative;
+    bottom: 28px;
+    right: 100px;
+  }
+  .gradient-quote {
+    display: block;
+    background: #FFE3E6;
+    background: radial-gradient(circle farthest-corner at center center, rgba(255, 227, 230, 0.2823529412) 0%, rgba(207, 83, 116, 0.2588235294) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 2.1rem;
+    text-align: left;
+    position: relative;
+    top: 11%;
+    width: 450px;
+    left: -20px;
+  }
+  .major-tom {
+    display: block;
+    width: 100px;
+    height: auto;
+    float: right;
+    transform: rotate(3deg);
+  }
+  .paragraph2 {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    font-family: "Rubik", sans-serif;
+    line-height: 27px;
+    position: relative;
+    top: 150px;
+  }
+  .section2 p {
+    color: rgb(210, 0, 162);
+    top: 145px;
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    font-family: "Rubik", sans-serif;
+    line-height: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+  }
+  .section2 span {
+    display: none;
+    /*
+    color: rgb(210, 0, 162);
+    top: 152px;
+    left: 27%;
+    position: relative;
+    font-size: .80rem;
+    font-weight:normal;
+    letter-spacing: .6px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+    cursor: pointer;*/
+  }
+  /*------------------*/
+  /*------FOOTER------*/
+  /*------------------*/
+  .cookiePopUp {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(13, 2, 48, 0.9725490196);
+    display: flex;
+    visibility: visible;
+    padding: 0 15px;
+    z-index: 2;
+  }
+  .cookiePopUp .cookieText .cookie-button .buttonText {
+    display: block;
+    padding: 10px;
+  }
+  .cookiePopUp .cookieText {
+    position: relative;
+    left: 25px;
+    color: #D200A2;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  /*.buttonText {
+    color: white;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+  }*/
+  .cookie-button {
+    display: block;
+    position: relative;
+    color: white;
+    background-color: #030671;
+    border: 0;
+    padding: 0 15px;
+    margin: 0 -20px;
+    cursor: pointer;
+    height: 48px;
+    font-family: "Rubik", sans-serif;
+    top: 10px;
+    left: 10%;
+    right: 22%;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  .cookie-button.is-active {
+    top: 0;
+  }
+  .cookie-button:hover {
+    background-color: #030896;
+  }
+  /*.cookiePopUp.disable {
+    display: none;
+  }*/
+}
 /*------------------*/
 /*------DESKTOP-----*/
 /*------------------*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1442px) {
   .astronaut .heading-box {
     border: 4px solid black;
     width: 27rem;
@@ -600,7 +866,7 @@ body {
     margin: 0 auto 0px;
     text-align: center;
     padding: 0 0;
-    background-color: none;
+    background-color: transparent;
     color: black;
     text-decoration: none;
     font-size: 3rem;
@@ -619,6 +885,7 @@ body {
     gap: 20px;
     padding: 0 80px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/photos/bakgrund2.jpg");
+    min-width: 100%;
     min-height: 100vh;
   }
   .space-ventures h2 span:first-of-type {
@@ -781,6 +1048,7 @@ body {
     display: flex;
     visibility: visible;
     padding: 0 15px;
+    z-index: 2;
   }
   .cookiePopUp .cookieText .cookie-button .buttonText {
     display: block;
@@ -788,10 +1056,10 @@ body {
   }
   .cookiePopUp .cookieText {
     position: relative;
-    left: 35px;
+    left: 25px;
     color: #D200A2;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px;
   }
   /*.buttonText {
@@ -810,8 +1078,9 @@ body {
     cursor: pointer;
     height: 48px;
     font-family: "Rubik", sans-serif;
-    top: 15px;
-    right: -52%;
+    top: 10px;
+    left: 10%;
+    right: 22%;
     font-weight: bold;
     transition: 0.4s;
   }
